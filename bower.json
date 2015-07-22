@@ -14,6 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "paper-button": "PolymerElements/paper-button#~1.0.3"
+    "paper-button": "PolymerElements/paper-button#~1.0.3",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.2",
+    "gold-elements": "PolymerElements/gold-elements#~1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0",
+    "platinum-elements": "PolymerElements/Platinum-elements#~1.0.1"
   }
 }
