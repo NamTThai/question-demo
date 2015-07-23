@@ -8,13 +8,40 @@
   <!--  Load webcomponents-lite.min.js for polyfill support. -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
-  <!-- Normailze stylesheet for cross-browser support -->
-  <link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css">
-
   <!-- Import Polymer Components -->
-  <link rel="import" href="bower_components/paper-button/paper-button.html">
+  <link rel="import" href="bower_components/iron-collapse/iron-collapse.html">
+
+  <style>
+    .heading {
+      padding: 10px 15px;
+      margin-top: 20px;
+      background-color: #f3f3f3;
+      border: 1px solid #dedede;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      width: 100%;
+      text-align: left;
+    }
+
+    .content {
+      padding: 15px;
+      border: 1px solid #dedede;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+  </style>
 </head>
 <body>
-  <paper-button>Contact</paper-button>
+  <button class="heading" onclick="document.querySelector('#collapse1').toggle();">Collapse #1</button>
+  <iron-collapse id="collapse1">
+    <div class="content">
+      <div>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea, id minim maiestatis incorrupte duo. Dolorum verterem ad ius, his et nullam verterem. Eu alia debet usu, an doming tritani est. Vix ad ponderum petentium suavitate, eum eu tempor populo, graece sententiae constituam vim ex. Cu torquatos reprimique neglegentur nec, voluptua periculis has ut, at eos discere deleniti sensibus. Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea, id minim maiestatis incorrupte duo. Dolorum verterem ad ius, his et nullam verterem. Eu alia debet usu, an doming tritani est. Vix ad ponderum petentium suavitate, eum eu tempor populo, graece sententiae constituam vim ex. Cu torquatos reprimique neglegentur nec, voluptua periculis has ut, at eos discere deleniti sensibus.</div>
+    </div>
+  </iron-collapse>
 </body>
 </html>
